@@ -55,8 +55,14 @@ main{
 
 /* ================== Footer ================== */
 footer{
-    text-align: center;
-    color: white;
     grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 8px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: right;
+    color: white;
     background: #202024;
 }
