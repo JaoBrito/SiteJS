@@ -25,14 +25,12 @@ header{
 
 }
 header img{
-    border: 1px solid blue;
     padding-left: 50px;
     float: left;
     width: 100px;
     height: 100%; 
 }
 nav {
-    border: 1px solid green;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,14 +48,32 @@ nav a {
 }
 
 #git{
-    border: 1px solid red;
-    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    float: left;
+    width: 100px;
+    height: 100%;
 }
 
 /* ================== Main ================== */
 main{
     grid-area: main;
+    color: white;
+    padding: 16px;
 }
+main h1{
+    /* padding: 8px; */
+    text-align: center;
+}
+main h2{
+    padding-bottom: 16px;
+}
+main p {
+    
+}
+
 
 /* ================== Footer ================== */
 footer{
