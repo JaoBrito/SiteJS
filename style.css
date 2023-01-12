@@ -48,6 +48,7 @@ nav a {
 }
 
 #git{
+    color: #DEBF05;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,8 +76,8 @@ main p {
     padding-bottom: 8px;
 }
 main mark{
-    background: #441C6A;
-    color: white;
+    background: #DEBF05;
+    color: black;
 }
 .texto {
     width: 720px;
@@ -105,7 +106,7 @@ footer li{
     list-style: none;
 }
 footer a {
-    color: #441C6A;
+    color: #DEBF05;
     text-decoration: none;
     padding: 10px;
 }
