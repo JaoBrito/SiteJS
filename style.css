@@ -66,12 +66,22 @@ main{
 main h1{
     /* padding: 8px; */
     text-align: center;
+    padding-bottom: 16px;
 }
 main h2{
     padding-bottom: 16px;
 }
 main p {
-    
+    padding-bottom: 8px;
+}
+main mark{
+    background: #441C6A;
+    color: white;
+}
+.texto {
+    width: 720px;
+    margin: auto;
+    padding: 30px 0;
 }
 
 
