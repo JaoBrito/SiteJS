@@ -1,4 +1,5 @@
 * {
+    font-family: 'Inter', sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -24,14 +25,14 @@ header{
 
 }
 header img{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     padding-left: 50px;
     float: left;
     width: 100px;
     height: 100%; 
 }
 nav {
-    /* border: 3px solid green; */
+    border: 1px solid green;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,6 +49,11 @@ nav a {
     text-decoration-line: none;
 }
 
+#git{
+    border: 1px solid red;
+    padding: 0px 0px 0px 0px;
+}
+
 /* ================== Main ================== */
 main{
     grid-area: main;
@@ -58,11 +64,22 @@ footer{
     grid-area: footer;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-around;
     padding-right: 8px;
     font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     float: right;
     color: white;
     background: #202024;
+}
+
+footer li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+footer a {
+    color: #441C6A;
+    text-decoration: none;
+    padding: 10px;
 }
