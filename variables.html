@@ -13,6 +13,7 @@
     <title>Variáveis em JavaScript</title>
 </head>
 <body>
+  <div id="container">
     <header>
       <a href="./home.html"><img src="./assets/logo-js.svg" alt="teste"></a>
         <nav>
@@ -44,6 +45,53 @@
           <p>Basta apenas adicionar a palavra reservada da variável &lpar;var&rpar; e o identificador dela, depois o símbolo “=” e entao o valor que será atribuído a ela. </p>
           <img src="./assets/var-num.png" alt="variavel numerica">
           <p>Vale ressaltar que caso seja realizada uma operação entre dois inteiros que resultem em um número com casas decimais, o interpretador age de forma correta deixando a resposta com as casas decimais.</p>
+
+        <h3>-> Strings</h3>
+        <p>Strings são  conjuntos de texto. São declaradas usando aspas simples ou aspas duplas:</p>
+        <img src="./assets/var-string.png" alt="variavel string">
+
+        <h3>-> Booleans</h3>
+        <p>Muitas vezes no código, queremos que uma variável tome como comportamento apenas: verdadeiro ou falso.</p>
+        <p>Desse pensamento que surgiu os Booleans. Pode-se assumir o valor true &lpar;verdadeiro&rpar; ou false &lpar;falso&rpar;. São usadas para operações logícos bem comuns em if, while e for.</p>
+        <img src="./assets/var-booleans.png" alt="var- Booleans">
+
+        <h3>-> Objects</h3>
+        <p>Objetos são variáveis que são capazes de armazenar vários valores ao mesmo tempo.</p>
+        <p>Para criarmos um tipo de dado que descreve um cliente, por exemplo, seria usado o objeto.</p>
+        <img src="./assets/var-objeto1.png" alt="var-objeto1">
+        <p>Para acessar as propriedades de objetos, usamos o operador de ponto:</p>
+        <img src="./assets/var-objeto2.png" alt="var-objeto2">
+
+        <h3>-> Arrays</h3>
+        <p>Arrays são objetos de alto nível que descrevem listas de valores. Os arrays são capazes de armazenar diversos valores indexados por números inteiros.
+        <p>Um array pode receber entre seus elementos qualquer tipo de dado Javascript: strings, números e até mesmo objetos. </p>
+        Por exemplo, o array abaixo armazena uma lista de carros:</p>
+        <img src="./assets/var-array.png" alt="arrays">
+        <p>Importante sempre lembrar que numa array, o valor de inexação começa no 0. Com isso, mesmo tendo 3 números de carros, o valor de índice do Agile, seria 2 e não 3.</p>
+        <p>Para acessar elementos de um array, é usada a sintaxe abaixo:</p>
+        <img src="./assets/var-array2.png" alt="acesso indexados">
+        <p>Para mudar o valor de uma determinada posição de um array, usamos</p>
+        <img src="./assets/var-array3.png" alt="mudança valor">
+        <p>Arrays também podem ser declarados usando a palavra-chave 'new':</p>
+        <img src="./assets/var-array4.png" alt="new array">
+        <p>O poder dos arrays em Javascript está nos métodos e propriedades disponíveis para usarmos. Vejamos alguns exemplos de métodos e propriedades bastante úteis quando estamos desenvolvendo programas em Javascript.</p>
+        <p>Para saber o tamanho, isto é, a quantidade de elementos de um array, pode ser usada a propriedade 'length': </p>
+        <img src="./assets/var-arrayLenght.png" alt="length">
+        <p>Caso precise ordenar os elementos de um array, pode ser usado o método 'sort': 
+        </p>
+        <img src="./assets/var-arraySort.png" alt="sort">
+        <p>O método push é usado para incluir um elemento em um array. Ele sempre inclui o elemento no final do array:</p>
+        <img src="./assets/var-arrayPush.png" alt="push">
+        <p>Já o método pop apaga o último elemento do array:</p>
+        <img src="./assets/var-arrayPop.png" alt="pop">
+        <p>Note que o método push recebe como argumento o elemento que deve ser inserido no array. O método pop, por outro lado, não recebe nenhum argumento, mas retorna o elemento excluído do array. </p>
+
+        <h3>-> Functions</h3>
+        <p>Um recurso bastante interessante dos objetos em Javascript é a possibilidade de definir funções personalizadas. Ainda usando o exemplo do objeto cliente, podemos definir uma função que retorne o nome completo do cliente: </p>
+        <img src="./assets/var-functions1.png" alt="functions exemplo">
+        <p>A propriedade “nomeCompleto”, quando for chamada por meio do operador de ponto, fará a chamada da função que retornará a propriedade “nome”, concatenada com um espaço e a propriedade “sobrenome”:</p>
+        <img src="./assets/var-functions2.png" alt="functions 2 ">
+        <p>Observe que, por ser uma função, ao acessar a propriedade “nomeCompleto”, é preciso abrir e fechar parênteses, explicitando que a função deve ser inicializada. </p>
         
       </div>
     </main>
@@ -66,6 +114,8 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+    
 </body>
 </html>
 
