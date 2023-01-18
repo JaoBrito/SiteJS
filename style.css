@@ -32,14 +32,18 @@ header img{
 }
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 nav li{
     float: left;
-    margin: 0px 50px;
     list-style: none;
 }
 nav a {
@@ -113,4 +117,36 @@ footer a {
 
 #scroll a{
     padding: 0px;
+}
+
+@media screen and (max-width: 425px){
+    *{
+        width: 100vw;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer{
+        height: 100vh;
+        max-height: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #social-links{
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    footer a{
+        width: 20px;
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
 }
