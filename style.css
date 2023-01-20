@@ -141,6 +141,10 @@ footer a {
         justify-content: flex-end;
     }
 
+    #git{
+        visibility: hidden;
+    }
+
     #social-links{
         display: flex;
         justify-content: center;
