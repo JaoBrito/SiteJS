@@ -31,6 +31,7 @@ header img{
     width: 100px;
     height: 100%; 
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -52,6 +53,10 @@ nav a {
     text-decoration-line: none;
 }
 
+nav a:hover{
+    color: white;
+}
+
 #git{
     color: #DEBF05;
     display: flex;
@@ -61,6 +66,10 @@ nav a {
     float: left;
     width: 100px;
     height: 100%;
+}
+
+#git:hover{
+    color: #b89e0f;
 }
 
 /* ================== Main ================== */
@@ -121,6 +130,10 @@ footer a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#scroll:hover{
+    color: #b89e0f;
 }
 #scroll span{
     margin-left: 35%;
