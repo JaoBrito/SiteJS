@@ -93,6 +93,16 @@ main mark{
     background: #DEBF05;
     color: black;
 }
+
+h3 mark {
+    border-radius: 0.25rem;
+    padding: .125rem .25rem;;
+}
+
+p mark {
+    border-radius: 0.25rem;
+    padding: .125rem .25rem;;
+}
 .texto {
     width: 720px;
     margin: auto;
@@ -132,9 +142,7 @@ footer a {
     flex-direction: column;
 }
 
-#scroll:hover{
-    color: #b89e0f;
-}
+
 #scroll span{
     margin-left: 35%;
 }

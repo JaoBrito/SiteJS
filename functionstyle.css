@@ -1,0 +1,9 @@
+main{
+    font-size: 16px;
+}
+code{
+    background: #343434;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    padding: .125rem .25rem;
+}
