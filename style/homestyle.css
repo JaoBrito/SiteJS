@@ -1,0 +1,12 @@
+main {
+    background: url(../assets/personprograming.gif) no-repeat center/cover;
+}
+/* #principal{
+    color: black;
+    text-decoration-line: overline underline;
+    text-transform: uppercase;
+} */
+main mark{
+    border-radius: 5%;
+}
+

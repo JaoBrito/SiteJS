@@ -1,0 +1,5 @@
+main img {
+    display: flex;
+    margin: 8px auto;
+    border-radius: 5%;
+}

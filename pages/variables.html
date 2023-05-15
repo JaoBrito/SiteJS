@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/variablesstyle.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <title>Variáveis em JavaScript</title>
+</head>
+<body>
+    <header>
+      <a href="./home.html"><img src="./assets/logo-js.svg" alt="teste"></a>
+        <nav>
+            <ul>
+              <li title="Home"><a href="./home.html">Home</a></li>
+              <li title="História"><a href="./history.html">História</a></li>
+              <li title="Comentários"><a href="./coments.html">Comentários</a></li>
+              <li title="Variáveis"><a href="./variables.html">Variávies</a></li>
+              <li title="Funções"><a href="./functions.html">Funções</a></li>
+            </ul>
+          </nav>
+          <a id="git" href="https://github.com/jaobrito" target="_blank">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+          </a>
+    </header>
+    <main>
+      <div class="texto">
+        <h1>Variáveis</h1>
+        <h2>Sua função</h2>
+        <p>As variáveis são parte muito importantes num código. Elas são responsáveis por armazenar os valores manipulados em nossos programas.</p> 
+        <p>Em diversas <mark>linguagens fortemente tipadas</mark>, é necessário  que o programador declare o tipo de dado que a variável receberá. Desse jeito, possibilitam que o seja identificado um erro no momento que o código é escrito, dando uma maior proteção pro programa. </p>
+        <p>Já no JavaScript, isso não ocorre. Como ela é uma <mark>linguagem fracamente tipada</mark>, programador não é obrigado a colocar o tipo da variável e a mesma pode facilmente mudar de um valor numérico para um textual, o que permitiria o programa rodar e o autor só perceberia o resultado diferente no final.</p>
+
+        <h2>Tipos de dados de variáveis</h2>
+        <p>As variáveis podem admitir alguns formatos como de Numbers, Strings, Booleans &lpar;booleanos&rpar;, Arrays, Objects, Functions e Undefined</p>
+
+        <h3>-> Numbers</h3>
+        <p>Seguindo o sentido contrário de muitas outras linguagens, O JS não diferencia números inteiros, de ponto flutuante, double precision, entre outros. No geral, todos os números são ponto flutuante contendo 64bits.</p>
+          <p>Basta apenas adicionar a palavra reservada da variável &lpar;var&rpar; e o identificador dela, depois o símbolo “=” e entao o valor que será atribuído a ela. </p>
+          <img src="../assets/var-num.png" alt="variavel numerica">
+          <p>Vale ressaltar que caso seja realizada uma operação entre dois inteiros que resultem em um número com casas decimais, o interpretador age de forma correta deixando a resposta com as casas decimais.</p>
+
+        <h3>-> Strings</h3>
+        <p>Strings são  conjuntos de texto. São declaradas usando aspas simples ou aspas duplas:</p>
+        <img src="../assets/var-string.png" alt="variavel string">
+
+        <h3>-> Booleans</h3>
+        <p>Muitas vezes no código, queremos que uma variável tome como comportamento apenas: verdadeiro ou falso.</p>
+        <p>Desse pensamento que surgiu os Booleans. Pode-se assumir o valor true &lpar;verdadeiro&rpar; ou false &lpar;falso&rpar;. São usadas para operações logícos bem comuns em if, while e for.</p>
+        <img src="../assets/var-booleans.png" alt="var- Booleans">
+
+        <h3>-> Objects</h3>
+        <p>Objetos são variáveis que são capazes de armazenar vários valores ao mesmo tempo.</p>
+        <p>Para criarmos um tipo de dado que descreve um cliente, por exemplo, seria usado o objeto.</p>
+        <img src="../assets/var-objeto1.png" alt="var-objeto1">
+        <p>Para acessar as propriedades de objetos, usamos o operador de ponto:</p>
+        <img src="../assets/var-objeto2.png" alt="var-objeto2">
+
+        <h3>-> Arrays</h3>
+        <p>Arrays são objetos de alto nível que descrevem listas de valores. Os arrays são capazes de armazenar diversos valores indexados por números inteiros.
+        <p>Um array pode receber entre seus elementos qualquer tipo de dado Javascript: strings, números e até mesmo objetos. </p>
+        Por exemplo, o array abaixo armazena uma lista de carros:</p>
+        <img src="../assets/var-array.png" alt="arrays">
+        <p>Importante sempre lembrar que numa array, o valor de inexação começa no 0. Com isso, mesmo tendo 3 números de carros, o valor de índice do Agile, seria 2 e não 3.</p>
+        <p>Para acessar elementos de um array, é usada a sintaxe abaixo:</p>
+        <img src="../assets/var-array2.png" alt="acesso indexados">
+        <p>Para mudar o valor de uma determinada posição de um array, usamos</p>
+        <img src="../assets/var-array3.png" alt="mudança valor">
+        <p>Arrays também podem ser declarados usando a palavra-chave 'new':</p>
+        <img src="../assets/var-array4.png" alt="new array">
+        <p>O poder dos arrays em Javascript está nos métodos e propriedades disponíveis para usarmos. Vejamos alguns exemplos de métodos e propriedades bastante úteis quando estamos desenvolvendo programas em Javascript.</p>
+        <p>Para saber o tamanho, isto é, a quantidade de elementos de um array, pode ser usada a propriedade 'length': </p>
+        <img src="../assets/var-arrayLenght.png" alt="length">
+        <p>Caso precise ordenar os elementos de um array, pode ser usado o método 'sort': 
+        </p>
+        <img src="../assets/var-arraySort.png" alt="sort">
+        <p>O método push é usado para incluir um elemento em um array. Ele sempre inclui o elemento no final do array:</p>
+        <img src="../assets/var-arrayPush.png" alt="push">
+        <p>Já o método pop apaga o último elemento do array:</p>
+        <img src="../assets/var-arrayPop.png" alt="pop">
+        <p>Note que o método push recebe como argumento o elemento que deve ser inserido no array. O método pop, por outro lado, não recebe nenhum argumento, mas retorna o elemento excluído do array. </p>
+
+        <h3>-> Functions</h3>
+        <p>Um recurso bastante interessante dos objetos em Javascript é a possibilidade de definir funções personalizadas. Ainda usando o exemplo do objeto cliente, podemos definir uma função que retorne o nome completo do cliente: </p>
+        <img src="../assets/var-functions1.png" alt="functions exemplo">
+        <p>A propriedade “nomeCompleto”, quando for chamada por meio do operador de ponto, fará a chamada da função que retornará a propriedade “nome”, concatenada com um espaço e a propriedade “sobrenome”:</p>
+        <img src="../assets/var-functions2.png" alt="functions 2 ">
+        <p>Observe que, por ser uma função, ao acessar a propriedade “nomeCompleto”, é preciso abrir e fechar parênteses, explicitando que a função deve ser inicializada. </p>
+        
+      </div>
+    </main>
+    <footer>
+        <div id="social-links">
+            <a href="https://discord.com/channels/940739490773860432/1016178013882302564" target="_blank">
+                <ion-icon size="large" name="logo-discord"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/jaobrito.ffc/"target="_blank">
+                <ion-icon size="large" name="logo-instagram"></ion-icon>
+              </a>
+              <a href="https://github.com/jaobrito" target="_blank">
+                <ion-icon size="large" name="logo-github"></ion-icon>
+              </a>
+              <a href="mailto:jvbrito02@gmail.com" target="_blank">
+                <ion-icon size="large" name="mail-outline"></ion-icon>
+                </a>
+        </div>
+        <div id="scroll">
+          <a href="#top"> &uarr; Scroll to top &uarr;</a>
+        </div>
+        <p>Página feita por João Brito &COPY; 2023</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<!-- https://kenzie.com.br/blog/variaveis-javascript/ -->
